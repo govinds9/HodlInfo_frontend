@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes moveRight {
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes moveLeft {
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.animate-right {
+    animation: moveRight 0.3s forwards;
+}
+
+.animate-left {
+    animation: moveLeft 0.3s forwards;
+}
